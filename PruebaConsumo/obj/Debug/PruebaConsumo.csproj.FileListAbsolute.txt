@@ -1,0 +1,15 @@
+D:\proy_almacen\PruebaConsumo\PruebaConsumo\obj\Debug\PruebaConsumo.csprojAssemblyReference.cache
+D:\proy_almacen\PruebaConsumo\PruebaConsumo\obj\Debug\PruebaConsumo.Properties.Resources.resources
+D:\proy_almacen\PruebaConsumo\PruebaConsumo\obj\Debug\PruebaConsumo.csproj.GenerateResource.cache
+D:\proy_almacen\PruebaConsumo\PruebaConsumo\obj\Debug\PruebaConsumo.csproj.CoreCompileInputs.cache
+D:\proy_almacen\PruebaConsumo\PruebaConsumo\bin\Debug\PruebaConsumo.exe.config
+D:\proy_almacen\PruebaConsumo\PruebaConsumo\bin\Debug\PruebaConsumo.exe
+D:\proy_almacen\PruebaConsumo\PruebaConsumo\bin\Debug\PruebaConsumo.pdb
+D:\proy_almacen\PruebaConsumo\PruebaConsumo\obj\Debug\PruebaConsumo.exe
+D:\proy_almacen\PruebaConsumo\PruebaConsumo\obj\Debug\PruebaConsumo.pdb
+D:\proy_almacen\PruebaConsumo\PruebaConsumo\bin\Debug\Newtonsoft.Json.dll
+D:\proy_almacen\PruebaConsumo\PruebaConsumo\bin\Debug\RestSharp.dll
+D:\proy_almacen\PruebaConsumo\PruebaConsumo\bin\Debug\Newtonsoft.Json.xml
+D:\proy_almacen\PruebaConsumo\PruebaConsumo\bin\Debug\RestSharp.xml
+D:\proy_almacen\PruebaConsumo\PruebaConsumo\obj\Debug\PruebaConsumo.csproj.CopyComplete
+D:\proy_almacen\PruebaConsumo\PruebaConsumo\obj\Debug\PruebaConsumo.frmLogin.resources
