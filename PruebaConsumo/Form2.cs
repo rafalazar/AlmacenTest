@@ -17,28 +17,49 @@ namespace PruebaConsumo
             InitializeComponent();
         }
 
-        RestAPI rest = new RestAPI();
+        RestAPI_Category rest = new RestAPI_Category();
 
         public String token { get; set; }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            lstbCategory.Items.Clear();
+            try
+            {
+                LoadData();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error : " + ex.Message);
+            }
+            
+        }
 
+        public void LoadData()
+        {
             CategoriasResponse response = rest.GetAllCategories(token);
 
             List<Result> categories = response.Result;
 
-            foreach(Result item in categories)
-            {
-                lstbCategory.Items.Add(String.Format("{0}".ToUpper(), item.Category_name));
-                //obtener el id en una variable de cada categoría
-            }
+            categories.Reverse();
+
+            dtgCategories.DataSource = categories;
         }
 
-        public void FillListBoxCategory()
+        private void btnCrearCate_Click(object sender, EventArgs e)
         {
+            FormCrearCate frmCrearCate = new FormCrearCate();
+            frmCrearCate.token = token;
+            frmCrearCate.ShowDialog();
+            LoadData();
+        }
 
+        private void btnActualizarCate_Click(object sender, EventArgs e)
+        {
+            FormActualizarCate frmActualizarCate = new FormActualizarCate();
+            frmActualizarCate.idCate = dtgCategories.CurrentRow.Cells[0].Value.ToString();
+            frmActualizarCate.token = token;
+            frmActualizarCate.ShowDialog();
+            LoadData();
         }
     }
 }

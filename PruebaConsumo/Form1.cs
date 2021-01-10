@@ -52,8 +52,8 @@ namespace PruebaConsumo
             this.Hide();
             Sesion frmSesion = new Sesion();
             frmSesion.response = clientResponse;
-            frmSesion.Show();
-           
+            frmSesion.ShowDialog();
+            
         }
     }
 }

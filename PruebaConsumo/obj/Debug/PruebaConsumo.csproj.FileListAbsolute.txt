@@ -15,3 +15,4 @@ D:\proy_almacen\PruebaConsumo\PruebaConsumo\obj\Debug\PruebaConsumo.csproj.CopyC
 D:\proy_almacen\PruebaConsumo\PruebaConsumo\obj\Debug\PruebaConsumo.frmLogin.resources
 D:\proy_almacen\PruebaConsumo\PruebaConsumo\obj\Debug\PruebaConsumo.Sesion.resources
 D:\proy_almacen\PruebaConsumo\PruebaConsumo\obj\Debug\PruebaConsumo.Form2.resources
+D:\proy_almacen\PruebaConsumo\PruebaConsumo\obj\Debug\PruebaConsumo.FormCrearCate.resources

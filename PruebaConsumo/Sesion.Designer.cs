@@ -48,6 +48,8 @@ namespace PruebaConsumo
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(340, 272);
             this.Controls.Add(this.btnGetCategories);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Sesion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sesion";
