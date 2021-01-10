@@ -1,7 +1,7 @@
 ﻿
 namespace PruebaConsumo
 {
-    partial class Sesion
+    partial class Form2
     {
         /// <summary>
         /// Required designer variable.
@@ -29,34 +29,33 @@ namespace PruebaConsumo
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnGetCategories = new System.Windows.Forms.Button();
+            this.lstbCategory = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // btnGetCategories
+            // lstbCategory
             // 
-            this.btnGetCategories.Location = new System.Drawing.Point(84, 97);
-            this.btnGetCategories.Name = "btnGetCategories";
-            this.btnGetCategories.Size = new System.Drawing.Size(180, 56);
-            this.btnGetCategories.TabIndex = 0;
-            this.btnGetCategories.Text = "Get Categories";
-            this.btnGetCategories.UseVisualStyleBackColor = true;
-            this.btnGetCategories.Click += new System.EventHandler(this.btnGetCategories_Click);
+            this.lstbCategory.FormattingEnabled = true;
+            this.lstbCategory.ItemHeight = 16;
+            this.lstbCategory.Location = new System.Drawing.Point(95, 104);
+            this.lstbCategory.Name = "lstbCategory";
+            this.lstbCategory.Size = new System.Drawing.Size(586, 180);
+            this.lstbCategory.TabIndex = 0;
             // 
-            // Sesion
+            // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(340, 272);
-            this.Controls.Add(this.btnGetCategories);
-            this.Name = "Sesion";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Sesion";
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lstbCategory);
+            this.Name = "Form2";
+            this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnGetCategories;
+        private System.Windows.Forms.ListBox lstbCategory;
     }
 }

@@ -20,8 +20,6 @@ namespace PruebaConsumo
         }
 
         RestAPI rest = new RestAPI();
-        
-        Boolean tokenIsValid = false;
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
@@ -34,22 +32,8 @@ namespace PruebaConsumo
 
             if(bool.Parse(clientResponse.Ok) == true)
             {
-                String token = clientResponse.Token;
-                DateTime tokenDate = DateTime.Parse(clientResponse.Date);
-                int expiresIn = Int32.Parse(clientResponse.Expires_in);
-
-                tokenIsValid = rest.ValidateToken(tokenDate, expiresIn);
-
-                if (tokenIsValid == true)
-                {
-                    Console.WriteLine("TOKEN valid!");
-                    LogInSuccesfull(userData);
-                }
-                else
-                {
-                    Console.WriteLine("TOKEN Invalid!");
-                    TokenResponse newToken = rest.RefreshToken(token, userData.User_id);
-                }
+                Console.WriteLine(clientResponse.Token);
+                LogInSuccesfull(userData, clientResponse);
             }
             else
             {
@@ -61,13 +45,14 @@ namespace PruebaConsumo
             
         }
 
-        public void LogInSuccesfull(User userData)
+        public void LogInSuccesfull(User userData, AuthResponse clientResponse)
         {
            
             MessageBox.Show("Bienvenid@ " + userData.First_name + " " + userData.Last_name);
             this.Hide();
             Sesion frmSesion = new Sesion();
-            frmSesion.ShowDialog();
+            frmSesion.response = clientResponse;
+            frmSesion.Show();
            
         }
     }
