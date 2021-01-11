@@ -68,5 +68,20 @@ namespace PruebaConsumo
                 return false;
             }
         }
+
+        public CategoriasResponse GetCategoryById(String token, int id)
+        {
+            var client = new RestClient($"http://159.203.78.14:3000/category/{id}?state=1");
+            var request = new RestRequest(Method.GET);
+            request.AddHeader("version", "app_v1");
+            request.AddHeader("token", token);
+            IRestResponse response = client.Execute(request);
+
+            CategoriasResponse categoriasResponse = JsonConvert.DeserializeObject<CategoriasResponse>(response.Content);
+
+            Console.WriteLine(JsonConvert.SerializeObject(categoriasResponse, Formatting.Indented));
+
+            return categoriasResponse;
+        }
     }
 }

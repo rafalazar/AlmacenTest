@@ -16,3 +16,4 @@ D:\proy_almacen\PruebaConsumo\PruebaConsumo\obj\Debug\PruebaConsumo.frmLogin.res
 D:\proy_almacen\PruebaConsumo\PruebaConsumo\obj\Debug\PruebaConsumo.Sesion.resources
 D:\proy_almacen\PruebaConsumo\PruebaConsumo\obj\Debug\PruebaConsumo.Form2.resources
 D:\proy_almacen\PruebaConsumo\PruebaConsumo\obj\Debug\PruebaConsumo.FormCrearCate.resources
+D:\proy_almacen\PruebaConsumo\PruebaConsumo\obj\Debug\PruebaConsumo.FormActualizarCate.resources
