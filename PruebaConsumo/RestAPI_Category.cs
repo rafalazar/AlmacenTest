@@ -5,11 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using RestSharp;
 using Newtonsoft.Json;
+using System.Data;
 
 namespace PruebaConsumo
 {
     public class RestAPI_Category
     {
+
+        DataView dtv;
+
         public CategoriasResponse GetAllCategories(String token)
         {
             var client = new RestClient("http://159.203.78.14:3000/category?offset=0&state=1");
@@ -82,6 +86,19 @@ namespace PruebaConsumo
             Console.WriteLine(JsonConvert.SerializeObject(categoriasResponse, Formatting.Indented));
 
             return categoriasResponse;
+        }
+
+        public DataView FiltrarCategory(String strCate)
+        {
+            try
+            {
+                dtv.RowFilter = "category_name like '%" + strCate + "%'";
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return dtv;
         }
     }
 }
