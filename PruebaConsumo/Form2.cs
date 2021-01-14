@@ -43,6 +43,7 @@ namespace PruebaConsumo
             categories.Reverse();
 
             dtgCategories.DataSource = categories;
+            lblTotalCate.Text = dtgCategories.Rows.Count.ToString();
         }
 
         private void btnCrearCate_Click(object sender, EventArgs e)
@@ -60,6 +61,12 @@ namespace PruebaConsumo
             frmActualizarCate.token = token;
             frmActualizarCate.ShowDialog();
             LoadData();
+        }
+
+        private void txtFiltro_TextChanged(object sender, EventArgs e)
+        {
+            dtgCategories.DataSource = rest.FiltrarCategory(txtFiltro.Text.Trim());
+            lblTotalCate.Text = dtgCategories.Rows.Count.ToString();
         }
     }
 }
